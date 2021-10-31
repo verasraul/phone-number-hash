@@ -7,17 +7,17 @@
 
 
   function encryptPhoneNumber(number) {
-    //Holds our new encrypted string
-    let encrypted = "";
+    //Holds our new cipher string
+    let cipher = "";
     //Loops through the string
     for (let i = 0; i < number.length; i++){
       //Checks if i is < 7 to get the first 6 digits
       //Also checks to make sure the - is not turned into *
-      //Adds to encrypted
-      (i < 7 && number[i] != "-") ? encrypted += "*" : encrypted += number[i];
+      //Adds to cipher
+      (i < 7 && number[i] != "-") ? cipher += "*" : cipher += number[i];
     }
     //Return our new string
-    return encrypted;
+    return cipher;
   };
 
 
