@@ -6,7 +6,7 @@
 
 
 
-  function encryptPhoneNumber(number) {
+ const encryptPhoneNumber = (number) => {
     //Holds our new cipher string
     let cipher = "";
     //Loops through the string
@@ -20,7 +20,4 @@
     return cipher;
   };
 
-
-//   module.exports = encryptPhoneNumber; 
-export default encryptPhoneNumber;
-console.log(encryptPhoneNumber("718-987-6543"));
+module.exports.encryptPhoneNumber = encryptPhoneNumber;
